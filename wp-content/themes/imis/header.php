@@ -22,7 +22,7 @@
 		      <div class="row nav-container">
 		        <div class="col s10 m6 l4 nav-left">
 		          <img src="<?= get_bloginfo('template_url'); ?>/images/logomenu.JPG" class="nav-left-img">
-		          <a id="logo-container" href="index.html" class="brand-logo titleFt1" style="">
+		          <a id="logo-container" href="<?= get_home_url(); ?>" class="brand-logo titleFt1">
 		            <?= get_bloginfo('name'); ?>
 		          </a>
 		        </div>

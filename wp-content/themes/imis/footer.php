@@ -26,7 +26,7 @@
 		    <div class="footer-copyright">
 		      <div class="container">
 		        &copy; <?= get_bloginfo('name'); ?>
-		        <img src="<?= get_bloginfo('template_url'); ?>/images/fb.png" style="width: 24px;float: right;cursor: pointer;">
+		        <img src="<?= get_bloginfo('template_url'); ?>/images/fb.png" class="img-footer">
 		      </div>
 		    </div>
 		  </footer>

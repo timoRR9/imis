@@ -14,7 +14,7 @@ Template Name: Revue
           <h3><i class="mdi-content-send brown-text"></i></h3>
           <h4 class="titleFt1"><?= get_field('titre_revue'); ?></h4>
           <br>
-          <div>
+          <div class="left-align light">
           	<?= get_field('texte_revue'); ?>
           </div>
 
@@ -37,7 +37,7 @@ Template Name: Revue
 	        		while($postQuery->have_posts()): $postQuery->the_post(); ?>
 
 	        			<div class="row">
-		                  <div class="container-article" style="margin-top: 35px;">
+		                  <div class="container-article">
 		                    <div class="card inverse-carousel">
 		                      <div class="card-content content-pad">
 		                        <div class="row">
@@ -47,11 +47,11 @@ Template Name: Revue
 		                        </div>
 		                        <div class="row">
 		                          <div class="col s8 offset-s2 m4 offset-m4">
-		                            <img src="<?= get_field('img_revue',get_the_ID())['url']; ?>" alt="<?= get_field('img_revue', get_the_ID())['alt']; ?>" class="image-carousel"/>
+		                            <img src="<?= get_field('img_revue',get_the_ID())['url']; ?>" alt="<?= get_field('img_revue', get_the_ID())['alt']; ?>" class="img-article"/>
 		                          </div>
 
-		                          <div class="col s12 m12" style="margin-top: 20px;">
-		                            <p class="left-align light toto">
+		                          <div class="col s12 m12">
+		                            <p class="left-align light txt-revue">
 		                              <?= get_field('txt_revue', get_the_ID()); ?>
 		                            </p>
 		                          </div>
@@ -78,7 +78,7 @@ Template Name: Revue
 
 	        		<?php endwhile;
 	        	}
-	        
+
 	        wp_reset_postdata(); ?>
 		    <?php the_posts_pagination( array(
 		      'mid_size' => 1,

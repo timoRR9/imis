@@ -13,7 +13,7 @@ Template Name: Edition
         <div class="col s12 center-align">
           <h3><i class="mdi-content-send brown-text"></i></h3>
           <h4 class="titleFt1"><?= get_field('titre_edition'); ?></h4>
-          <div class="row center-align" style="margin: 0">
+          <div class="row center-align noMargfix">
           <div class="col s12 m10 offset-m1 xl8 offset-xl2 mobileview">
                 <video controls muted>
                   <source src="<?= get_field('video_edition'); ?>" type="video/mp4">
@@ -50,7 +50,7 @@ Template Name: Edition
 
 		    if($postQuery->have_posts()){
         		while($postQuery->have_posts()): $postQuery->the_post(); ?>
-        			<div class="row" style="margin-top: 35px;">
+        			<div class="row">
 			            <div class="container-article">
 			              <div class="card inverse-carousel">
 			                <div class="card-content content-pad">
@@ -62,29 +62,29 @@ Template Name: Edition
 			                  </div>
 			                  <div class="row">
 			                    <div class="col s8 offset-s2 m4 offset-m4">
-			                      <img src="<?= get_field('img_edition', get_the_ID())['url']; ?>" style="width: 100%;max-height: 575px;max-width: 360px;margin-right: auto;margin-left: auto;"/>
+			                      <img src="<?= get_field('img_edition', get_the_ID())['url']; ?>" class="img-article"/>
 			                    </div>
 
-			                    <div class="col s12 m12" style="margin-top: 20px;">
+			                    <div class="col s12 m12">
 			                      <p class="light">
 			                        <?= get_field('desc_edtition', get_the_ID('desc_edtition')); ?>
 			                         
 			                        <br><br>
-			                        <span style="font-size: 12px;">
+			                        <span class="caract-edition">
 			                            <?= get_field('caract_edition', get_the_ID()); ?>
 			                        </span>
 			                      </p>
 			                      <div class="row">
-			                        <div class="col s10 offset-s1" style="margin-top: 50px"><hr></div>
+			                        <div class="col s10 offset-s1 edition-separator"><hr></div>
 			                      </div>
-			                      <h4 class="center-align titleFt" style="margin-top: 30px;margin-bottom: 50px;">Un extrait du livre</h4>
+			                      <h4 class="center-align titleFt edition-subtitle">Un extrait du livre</h4>
 			                      <div class="light">
 			                        <?= get_field('extrait_edition', get_the_ID()); ?>
 			                      </div>
 			                    </div>
 			                  </div>
 			                  <div class="row">
-			                    <div class="col s12 center-align" style=";margin: 20px 0">
+			                    <div class="col s12 center-align edition-icon-container">
 			                      <i class="material-icons icon-carousel">check</i> <?= get_field('prix_edition', get_the_ID()); ?>
 			                    </div>
 			                  </div>
@@ -99,7 +99,7 @@ Template Name: Edition
 			            </div>
 			          </div>
         		<?php endwhile;
-          	
+
           	}
           	wp_reset_postdata(); ?>
 
@@ -110,9 +110,9 @@ Template Name: Edition
 		      'next_text' => false
 		    ) );
 		    ?>
-          
 
-          
+
+
         </div>
       </div>
     </div>
