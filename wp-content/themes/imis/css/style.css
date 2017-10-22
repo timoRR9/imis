@@ -1,0 +1,422 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+@font-face {
+  font-family: 'Caviar-dreams';
+  src: url("../fonts/Caviar-dreams/CaviarDreams.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Caviar-dreams-bold';
+  src: url("../fonts/Caviar-dreams/CaviarDreams_Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AvenirNextLTPro-Regular';
+  src: url("../fonts/avenirNext/AvenirNextLTPro-Regular.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body{
+  font-family: "PT Sans";
+}
+
+nav{
+  position: absolute;
+  top:40px;
+  box-shadow: none;
+
+}
+
+nav ul a {
+  color: #444;
+}
+
+nav .brand-logo {
+  color: white;
+  position: relative;
+  left: 125px;
+}
+
+nav ul a:hover {
+  background-color: #fecb02;
+  color: white;
+}
+nav ul li.active {
+  background-color: #fecb02;
+}
+.nav-side-block{
+  right: 0 !important;
+}
+.side-nav li.active {
+  background-color: #fecb02 !important;
+
+}
+.side-nav li > a:hover, .side-nav li > a:focus, .side-nav li > a:active {
+  background-color: #fecb02 !important;
+  color: white !important;
+}
+
+.side-nav li.active > a {
+  color: white !important;
+}
+nav ul li.active a {
+  color: white;
+}
+.nav-container{
+  height: 100%;
+}
+.nav-left{
+  background-color: black;
+  height: 100%;
+}
+.nav-right{
+  padding-left:0!important;
+}
+.nav-left-img{
+  position: absolute;
+  top: -9px;
+  left:20px;
+}
+.nav-first-link{
+  padding-left:0!important;
+}
+.nav-burger{
+  float: right !important;
+  color: #000000;
+}
+
+p {
+  line-height: 2rem;
+}
+
+button{
+  font-family: "PT Sans";
+  background-color: #EEBF06;
+}
+
+button:hover{
+  background-color: #fecb02;
+}
+
+.button-imis{
+  font-family: "PT Sans";
+  background-color: #fecb02;
+}
+
+.button-imis:hover{
+  background-color: #EEBF06;
+}
+
+.button-collapse {
+  color: #000000;
+  display: none;
+}
+
+.parallax-container {
+  min-height: 500px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+.parallax-container .section {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  transform: translateY(-50%);
+}
+
+
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+video{
+  width: 100%;
+  margin: 35px 0;
+}
+
+
+.bg-inverse{
+  background-color: #f5f5f5;
+}
+
+.slider {
+  width: 100%;
+  margin: 100px auto;
+  height: inherit;
+}
+
+.slick-slide {
+  margin: 0px 20px;
+}
+
+.slick-slide:focus {
+  outline: none;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+
+.titleFt{
+  font-family: "AvenirNextLTPro-Regular";
+}
+
+.titleFt1{
+  font-family: "PT Sans";
+}
+
+.titleFt2{
+  font-family: "Lato";
+}
+
+.bar-title{
+  width: 286px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 40px;
+  line-height: 37px;
+  color: #fff;
+  margin-bottom: 40px;
+}
+.poesis{
+  background-color: #5bc0de;
+}
+
+.proximité{
+  background-color: #f0ad4e;
+}
+
+::selection {
+  text-shadow: none;
+  background: #fecb02;
+}
+
+.toto{
+  display:block;
+  padding-top: 3px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.ptexte{font-size:12px;font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", Helvetica, Arial, sans-serif
+}
+
+.image-carousel{
+  width: 100%;
+}
+
+.icon-carousel{
+  color:#fecb02;
+  position: relative;
+  top: 5px
+}
+
+.action-carousel{
+  color:#000 !important;
+}
+
+.inverse-carousel{
+  background-color: #f8f8f8;
+}
+
+.container-article{
+  width: 790px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+#id2 .content-pad{
+  padding: 24px 70px;
+}
+
+#id6{
+  background-color: #000 !important;
+  font-family: "PT Sans";
+}
+
+#bg-image-md-xs, #bg-image-md-xs2{
+  display: none;
+}
+
+#id1{
+  position: fixed;
+  height: 145px;
+  width: 100%;
+  background-color: white;
+  z-index: 999;
+}
+
+.first-block {
+  padding: 10px 0;
+  padding-top: 145px;
+}
+
+.light{
+  font-family: "PT Sans";
+  text-align: left;
+}
+
+.page-footer .container .row {
+  margin-bottom: 0;
+}
+
+h5.white-text{
+  font-size: 20px;
+  font-weight: 700;
+}
+a.white-text{
+  font-size: 15px;
+}
+
+
+.irow{
+  margin-bottom: 60px
+}
+
+.iconteneur
+{
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+
+.iconteneur iframe
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 33px 0;
+}
+
+.mobileview{
+  display: none;
+}
+
+.largeview{
+  display: inherit;
+}
+
+@media only screen and (max-width : 992px) {
+
+  .topxs{
+    margin-top: 30px !important;
+  }
+
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #id2 .toto, #id3 .toto{
+    margin-top: 10px
+  }
+  nav .brand-logo {
+    left: 205px;
+  }
+
+
+
+  #bg-image-lg, #bg-image-lg2{
+    display: none;
+  }
+}
+
+
+@media only screen and (max-width : 767px) {
+
+
+  #id2 .content-pad, #id3 .content-pad{
+    padding: 24px;
+  }
+
+  #bg-image-md-xs, #bg-image-md-xs2{
+    display: inherit;
+  }
+
+  .mobileview{
+    display: inherit;
+  }
+
+  .largeview{
+    display: none;
+  }
+
+}
+
+@media only screen and (min-width : 992px) {
+
+  .irow{
+    margin-bottom: 80px
+  }
+
+}
+
+
+
+
+
+@media   (min-width : 768px) and (max-width : 951px) {
+
+  .nav-left{
+    width: 83.3333333333% !important;
+  }
+
+  .nav-right{
+    width: 16.6666666667% !important;
+  }
+
+}
+
+@media only screen and (max-width : 951px) {
+
+  .button-collapse{
+    display: inherit;
+  }
+  .left{
+    display: none;
+  }
+
+}
+
+
+
+
+@media   (min-width : 768px) and (max-width : 922px) {
+
+  .parallax-container{
+    display: none;
+  }
+
+}
+
+@media only screen and (max-width : 1200px) {
+
+  .container-article{
+    width: 100%;
+  }
+
+
+}
