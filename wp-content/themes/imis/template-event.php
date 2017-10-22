@@ -39,7 +39,7 @@ Template Name: Evenement
        		while($postQuery->have_posts()): $postQuery->the_post(); ?>
        			<div class="row">
 			        <div class="col s12 center-align">
-			          <h5 class="bar-title poesis titleFt1"><?= get_the_title(); ?></h5>
+			          <h5 class="bar-title poesis titleFt1" style="background-color: <?= get_field('color_title_event'); ?>;"><?= get_the_title(); ?></h5>
 			          <p class="left-align light" style="margin-bottom: -15px;">
 			            <?= get_field('txt_top_event', get_the_ID()); ?>
 			          </p>
@@ -60,11 +60,10 @@ Template Name: Evenement
        		<?php endwhile;
        	}
        	wp_reset_postdata(); ?>
-      	<p>Pages</p>
 	    <?php the_posts_pagination( array(
 	      'mid_size' => 1,
-	      'prev_text' => false,
-	      'next_text' => false
+	      'prev_text' => 'Précédent',
+		  'next_text' => 'Suivant'
 	    ) ); ?>
     </div>
   </div>

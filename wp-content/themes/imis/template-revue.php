@@ -80,11 +80,10 @@ Template Name: Revue
 	        	}
 	        
 	        wp_reset_postdata(); ?>
-	        <p>Pages</p>
 		    <?php the_posts_pagination( array(
 		      'mid_size' => 1,
-		      'prev_text' => false,
-		      'next_text' => false
+		      'prev_text' => 'Précédent',
+		      'next_text' => 'Suivant'
 		    ) ); ?>
 
         </div>
