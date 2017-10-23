@@ -3,10 +3,10 @@ add_action('wp_enqueue_scripts', 'theme_enqueue_scripts');
 function theme_enqueue_scripts(){
 
 
-	wp_register_script('materialize', get_bloginfo('template_url') . '/js/materialize.js', array('require'), false, true);
+	wp_register_script('materialize', get_bloginfo('template_url') . '/js/materialize.js', array('jquery'), false, true);
 	wp_enqueue_script('materialize');
 
-	wp_register_script('init', get_bloginfo('template_url') . '/js/init.js', array('require'), false, true);
+	wp_register_script('init', get_bloginfo('template_url') . '/js/init.js', array('jquery'), false, true);
 	wp_enqueue_script('init');
 
 	wp_register_script('slick', get_bloginfo('template_url') . '/js/slick.js', array('jquery'), false, true);
