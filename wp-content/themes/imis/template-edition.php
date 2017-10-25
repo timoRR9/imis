@@ -83,18 +83,18 @@ Template Name: Edition
 			                      </div>
 			                    </div>
 			                  </div>
-			                  <div class="row">
+			                  <!-- <div class="row">
 			                    <div class="col s12 center-align edition-icon-container">
 			                      <i class="material-icons icon-carousel">check</i> <?= get_field('prix_edition', get_the_ID()); ?>
 			                    </div>
-			                  </div>
+			                  </div> -->
 			                </div>
-			                <div class="card-action">
+			                <!-- <div class="card-action">
 			                  <a href="#" class="action-carousel">
 			                    <i class="material-icons icon-carousel">add_shopping_cart</i>
 			                    Ajouter au panier
 			                  </a>
-			                </div>
+			                </div> -->
 			              </div>
 			            </div>
 			          </div>

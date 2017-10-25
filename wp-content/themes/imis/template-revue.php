@@ -56,22 +56,22 @@ Template Name: Revue
 		                            </p>
 		                          </div>
 		                        </div>
-		                        <br><br>
-		                        <div class="row">
+		                      
+		                        <!-- <div class="row">
 		                          <div class="col s12 m12 l6 center-align" >
 		                            <i class="material-icons icon-carousel">check</i> <?= get_field('prix_papier_revue', get_the_ID()); ?>
 		                          </div>
 		                          <div class="col s12 m12 l6 center-align">
 		                            <i class="material-icons icon-carousel">check</i> <?= get_field('prix_pdf_revue', get_the_ID()); ?>
 		                          </div>
-		                        </div>
+		                        </div> -->
 		                      </div>
-		                      <div class="card-action">
+		                      <!-- <div class="card-action">
 		                        <a href="#" class="action-carousel">
 		                          <i class="material-icons icon-carousel">add_shopping_cart</i>
 		                          Ajouter au panier
 		                        </a>
-		                      </div>
+		                      </div> -->
 		                    </div>
 		                  </div>
 		                </div>

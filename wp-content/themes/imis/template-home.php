@@ -38,12 +38,10 @@ Template Name: Accueil
             foreach ($visuels as $visuel) { ?>
               <div>
                 <div class="row noMargfix">
-                  <div class="col s12 m6 offset-m3 l4 offset-l4">
-                    <div class="card">
-                      <div class="card-image">
-                        <img src="<?= $visuel['url']; ?>">
-                      </div>
-                    </div>
+                  <div class="col s12">
+
+                      <img src="<?= $visuel['url']; ?>" style="width:initial;max-width:100%;margin:0 auto;">
+
                   </div>
                 </div>
               </div>
