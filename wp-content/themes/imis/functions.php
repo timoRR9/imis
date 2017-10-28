@@ -60,5 +60,5 @@ function register_widgets(){
 }//end register_widgets()
 add_action( 'widgets_init', 'register_widgets' );
 
-update_option( 'siteurl', 'http://www.local.imis.fr' );
-update_option( 'home', 'http://www.local.imis.fr' );
+update_option( 'siteurl', 'http://localhost/SourceXAMP/final-imis/imis' );
+update_option( 'home', 'http://localhost/SourceXAMP/final-imis/imis' );

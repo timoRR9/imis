@@ -12,10 +12,10 @@
 		        <div class="col l3 s12">
 		          <h5 class="white-text">liens</h5>
 		          <ul>
-		            <li><a class="white-text" href="#!">newsletter</a></li>
-		            <li><a class="white-text" href="#!">mentions légales</a></li>
-		            <li><a class="white-text" href="#!">cookies</a></li>
-		            <li><a class="white-text" href="#!">crédits</a></li>
+		            <li><a class="white-text" href="<?= get_permalink(14); ?>?from=yes">newsletter</a></li>
+		            <li><a class="white-text" href="<?= get_permalink(82); ?>">mentions légales</a></li>
+		            <li><a class="white-text" href="<?= get_permalink(78); ?>">cookies</a></li>
+		            <li><a class="white-text" href="<?= get_permalink(80); ?>">crédits</a></li>
 		          </ul>
 		        </div>
 		        <div class="col l3 s12">
@@ -26,7 +26,7 @@
 		    <div class="footer-copyright">
 		      <div class="container">
 		        &copy; <?= get_bloginfo('name'); ?>
-		        <img src="<?= get_bloginfo('template_url'); ?>/images/fb.png" class="img-footer">
+		        <a href="<?= get_field('lien_fb', 8); ?>" target="_blank"><img src="<?= get_bloginfo('template_url'); ?>/images/fb.png" class="img-footer"></a>
 		      </div>
 		    </div>
 		  </footer>
